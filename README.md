@@ -22,6 +22,6 @@ If you succeed, you will see "OK", but if you fail, you will see "X". You don't 
 
 # Extra Points:
 
-Feel free to edit the README.md (this very text itself) of this assignment and enhance it. The README is the front-most facing page of your work, so it should make a good impression. As assigments get more complex, you will be expected to create READMEs with sufficient detail to capture all aspects of how your code is intended to be used: Cloning, dependencies, gotchas, quick-starts, deployment notes, etc.
+Feel free to edit the README.md (this very text itself) of this assignment and enhance it. The README is the front-most facing page of your work, so it should make a good impression. As assignments get more complex, you will be expected to create READMEs with sufficient detail to capture all aspects of how your code is intended to be used: Cloning, dependencies, gotchas, quick-starts, deployment notes, etc.
 
 As a reference, see this: [README Best Practices template](https://github.com/jehna/readme-best-practices/blob/master/README-default.md)
