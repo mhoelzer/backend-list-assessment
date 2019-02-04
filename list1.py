@@ -22,9 +22,21 @@
 # strings where the string length is 2 or more and the first
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
+
+
 def match_ends(words):
-    """Your code goes here.  Edit this docstring."""
-    return
+    """ends match because the strings aer conformists"""
+    word = [word for word in words if len(word) >= 2 and word[0] == word[-1]]
+    return len(word)
+
+    # return (len([word for word in words
+    #         if len(word) >= 2 and word[0] == word[-1]]))
+
+    # matching = []
+    # for word in words:
+    #     if len(word) >= 2 and word[0] == word[-1]:
+    #         matching.append(word)
+    # return len(matching)
 
 
 # B. front_x
@@ -35,8 +47,19 @@ def match_ends(words):
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
 def front_x(words):
-    """Your code goes here.  Edit this docstring."""
-    return
+    """x goes first because it's tired of being ignored"""
+    x_start = [word for word in sorted(words) if word.startswith("x")]
+    not_x_start = [word for word in sorted(words) if not word.startswith("x")]
+    return x_start + not_x_start
+    
+    # x_start = []
+    # not_x_start = []
+    # for word in sorted(words):
+    #     if word.startswith("x"):
+    #         x_start.append(word)
+    #     if not word.startswith("x"):
+    #         not_x_start.append(word)
+    # return x_start + not_x_start
 
 
 # C. sort_last
@@ -47,11 +70,26 @@ def front_x(words):
 # Hint: use a custom key= function to extract the last element form each tuple.
 def sort_last(tuples):
     """Your code goes here.  Edit this docstring."""
-    return
+    return sorted(tuples, key=lambda element: element[-1])
+    # lambda helps with doing inline functions inside other functs w/o a name
+    # the parameter passed into key needs to be callable, and lambda is
+
+    # return [last for last in sorted(tuples, key=lambda element: element[-1])]
+
+    # last_sorted = ([last for last in
+    #                 sorted(tuples, key=lambda element: element[-1])])
+    # return last_sorted
+
+    # lasts = []
+    # for last in sorted(tuples, key=lambda element: element[-1]):
+    #     lasts.append(last)
+    # return lasts
 
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
+
+
 def test(got, expected):
     if got == expected:
         prefix = ' OK '
