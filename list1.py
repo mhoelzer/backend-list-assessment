@@ -25,7 +25,7 @@
 
 
 def match_ends(words):
-    """ends match because the strings aer conformists"""
+    """ends match because the strings are conformists"""
     word = [word for word in words if len(word) >= 2 and word[0] == word[-1]]
     return len(word)
 
@@ -51,7 +51,7 @@ def front_x(words):
     x_start = [word for word in sorted(words) if word.startswith("x")]
     not_x_start = [word for word in sorted(words) if not word.startswith("x")]
     return x_start + not_x_start
-    
+
     # x_start = []
     # not_x_start = []
     # for word in sorted(words):
