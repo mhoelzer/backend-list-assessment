@@ -1,26 +1,27 @@
 # Kenzie Academy: Lists Assignment
+
 For this assignment, you'll be completing some list manipulation functions within the list1.py and list2.py files.
 
-There is some light dependency on knowing how
-[Functions](https://docs.python.org/2/tutorial/controlflow.html#defining-functions)
-work in python in terms of argument passing and return values, but you should
-be able to figure it out as you go.
+There is some light dependency on knowing how [Functions](https://docs.python.org/2/tutorial/controlflow.html#defining-functions) work in Python in terms of argument passing and return values, but you should be able to figure it out as you go.
 
-[list1.py](./list1.py) -- Complete the list functions in list1.py,
-based on your knowledge of Python list iteration and indexing.
+[list1.py](./list1.py) -- Complete the list functions in list1.py, based on your knowledge of Python list iteration and indexing. This file includes 3 problems that involve things like matching, sorting, and tuples. These are the easier problems to get you started.
 
-[list2.py](./list2.py) -- Additional list function completions.
+[list2.py](./list2.py) -- Additional list function completions. There are two problems here that include removing adjacent elements and merging lists without using built-in sort/sorted methods. These problems require more thought.
+
+In order to see if your answers are correct, open the terminal for this project folder, and enter `python list1.py` (or `python list2.py`, depending on which file you are testing). This will run the test function based on the functions you have written. 
+If you succeed, you will see "OK", but if you fail, you will see "X". You don't want to see "X".
 
 # Workflow for this Assignment
-1. *Fork* this repository into your own personal github account.
-2. Then *Clone* your own repo to your local development machine.
-3. Complete the missing parts of the files to pass the built-in tests.
-4. Commit your changes (with _meaningful_ commit messages e.g. not 'blah' or 'asdf' or 'updated code'), then `git push` back to your own github account.
-5. From your personal Github repo, create a pull request (PR).  Add your instructor (and any other optional reviewers such as TAs and Coaches) to your PR, so that they can get a notification.  If you don't recall how to add reviewer(s) to a PR, please refresh on [this article](https://help.github.com/articles/requesting-a-pull-request-review/)
-6. Copy/Paste the URL link to your PR as your assignment submission.
+
+1. _Fork_ this repository into your own personal github account. --> COMPLETED
+2. Then _Clone_ your own repo to your local development machine. --> COMPLETED
+3. Complete the missing parts of the files to pass the built-in tests. --> COMPLETED
+4. Commit your changes (with _meaningful_ commit messages e.g. not 'blah' or 'asdf' or 'updated code'), then `git push` back to your own github account. --> COMPLETED
+5. From your personal Github repo, create a pull request (PR). Add your instructor (and any other optional reviewers such as TAs and Coaches) to your PR, so that they can get a notification. If you don't recall how to add reviewer(s) to a PR, please refresh on [this article](https://help.github.com/articles/requesting-a-pull-request-review/). --> COMPLETED
+6. Copy/Paste the URL link to your PR as your assignment submission. --> COMPLETED
 
 # Extra Points:
-Feel free to edit the README.md (this very text itself) of this assignment and enhance it.  The README is the front-most facing page of your work, so it should make a good impression.  As assigments get more complex, you will be expected to create READMEs with sufficient detail to capture all aspects of how your code is intended to be used: Cloning, dependencies, gotchas, quick-starts, deployment notes, etc.
 
-As a reference, see this:
-[README Best Practices template](https://github.com/jehna/readme-best-practices/blob/master/README-default.md)
+Feel free to edit the README.md (this very text itself) of this assignment and enhance it. The README is the front-most facing page of your work, so it should make a good impression. As assigments get more complex, you will be expected to create READMEs with sufficient detail to capture all aspects of how your code is intended to be used: Cloning, dependencies, gotchas, quick-starts, deployment notes, etc.
+
+As a reference, see this: [README Best Practices template](https://github.com/jehna/readme-best-practices/blob/master/README-default.md)
