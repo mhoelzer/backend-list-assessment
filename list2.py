@@ -15,19 +15,33 @@
 # so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
 # modify the passed in list.
 # Hint: Don't use `set()`
+
+
 def remove_adjacent(nums):
-    """Your code goes here.  Edit this docstring."""
-    return
+    """remove adjacent because there can be only one... in a row"""
+    unique = []
+    for num in nums:
+        if len(unique) == 0 or num != unique[-1]:
+            # need the len of 0 b/c wont append if nothing is inside otherwise
+            unique.append(num)
+    return unique
 
 
 # E. Given two lists sorted in increasing order, create and return a merged
 # list of all the elements in sorted order. You may modify the passed in lists.
-# The solution should work in "linear" time, making a single pass of both lists.
+# The solution should work in "linear" time/making a single pass of both lists.
 # Hint: Don't use `sort` or `sorted` -- they are not linear time.
+# linear means merge lists one time through
 def linear_merge(list1, list2):
-    """Your code goes here.  Edit this docstring."""
-    return
-
+    """sort w/o sort because we want to be together but want to be difficult"""
+    list_sorted = []
+    list_combo = list1 + list2
+    while list_combo:
+        alpha_top = min(list_combo)
+        list_sorted.append(alpha_top)
+        list_combo.pop(list_combo.index(alpha_top))
+        # popping wants index
+    return list_sorted
 
 
 # Simple provided test() function used in main() to print
@@ -55,6 +69,7 @@ def main():
          ['aa', 'bb', 'cc', 'xx', 'zz'])
     test(linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']),
          ['aa', 'aa', 'aa', 'bb', 'bb'])
+
 
 # Standard boilerplate (python idiom) to call the main() function.
 if __name__ == '__main__':
