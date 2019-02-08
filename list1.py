@@ -38,6 +38,12 @@ def match_ends(words):
     #         matching.append(word)
     # return len(matching)
 
+    # count = 0
+    # for word in words:
+    #     if len(word) >= 2 and word[0] == word[-1]:
+    #         count += 1
+    # return count
+
 
 # B. front_x
 # Given a list of strings, return a list with the strings
@@ -60,6 +66,15 @@ def front_x(words):
     #     if not word.startswith("x"):
     #         not_x_start.append(word)
     # return x_start + not_x_start
+
+    # xs = []
+    # other = []
+    # for w in words:
+    # 	if w.startswith("x"):
+    # 		xs.append(w)
+    # 	else:
+    # 		other.append(w)
+    # return sorted(xs) + sorted(other)
 
 
 # C. sort_last
@@ -84,6 +99,10 @@ def sort_last(tuples):
     # for last in sorted(tuples, key=lambda element: element[-1]):
     #     lasts.append(last)
     # return lasts
+
+    # def last(a):
+    #     return a[-1]
+    # return sorted(tuples, key=last)
 
 
 # Simple provided test() function used in main() to print
