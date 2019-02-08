@@ -26,12 +26,18 @@ def remove_adjacent(nums):
             unique.append(num)
     return unique
 
+    # result = []
+    # result = [result.append(n) for n in nums if not result or n != result[-1]]
+    # # list exists with othing in it, so dont need to check length
+    # return result
+
 
 # E. Given two lists sorted in increasing order, create and return a merged
 # list of all the elements in sorted order. You may modify the passed in lists.
 # The solution should work in "linear" time/making a single pass of both lists.
 # Hint: Don't use `sort` or `sorted` -- they are not linear time.
-# linear means merge lists one time through
+# linear means merge lists one time through; one pass through list
+# sorted looks in elements and sorts then keeps going all over list and not one time
 def linear_merge(list1, list2):
     """sort w/o sort because we want to be together but want to be difficult"""
     list_sorted = []
@@ -42,6 +48,20 @@ def linear_merge(list1, list2):
         list_combo.pop(list_combo.index(alpha_top))
         # popping wants index
     return list_sorted
+
+    # result = []
+    # while list1 and list2:  # just chekcing for emptiness
+    #     if list1[0] < list2[0]:
+    #         # sorted in own ways
+    #         result.append(list1.pop(0))
+    #     else:
+    #         result.append(list2.pop(0))
+    # # result.extend(list1)
+    # # # wont hurt if list1 is empty
+    # # result.extend(list2)
+    # # # wont hurt if list2 is empty
+    # result.extend(list1 if list1 else list2)
+    # return result
 
 
 # Simple provided test() function used in main() to print
