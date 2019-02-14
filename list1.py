@@ -26,8 +26,9 @@
 
 def match_ends(words):
     """ends match because the strings are conformists"""
-    word = [word for word in words if len(word) >= 2 and word[0] == word[-1]]
-    return len(word)
+    return len([word for word in words if len(word) >= 2 and word[0] == word[-1]])
+
+#     return sum([1 for word in words if len(word) >= 2 and word[0] == word[-1]])
 
     # return (len([word for word in words
     #         if len(word) >= 2 and word[0] == word[-1]]))
@@ -88,6 +89,8 @@ def sort_last(tuples):
     return sorted(tuples, key=lambda element: element[-1])
     # lambda helps with doing inline functions inside other functs w/o a name
     # the parameter passed into key needs to be callable, and lambda is
+    # checks tuple for 2nd vale is lambda
+    # tuple is argument; key sorts acoridng to frist 1
 
     # return [last for last in sorted(tuples, key=lambda element: element[-1])]
 
