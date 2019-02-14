@@ -31,6 +31,17 @@ def remove_adjacent(nums):
     # # list exists with othing in it, so dont need to check length
     # return result
 
+    # result = []
+    # result = [n for n in nums if (len(result) == 0 or n != result[-1])]
+    # # list exists with othing in it, so dont need to check length
+    # return result
+
+    # var = nums[:1]  # first element; returns list of 0 and ends b4 1, so gets first but returns in list
+    # for i in nums[1:]:
+    #     if i != var[-1]:
+    #         var.append(i)
+    # return var
+
 
 # E. Given two lists sorted in increasing order, create and return a merged
 # list of all the elements in sorted order. You may modify the passed in lists.
@@ -40,28 +51,29 @@ def remove_adjacent(nums):
 # sorted looks in elements and sorts then keeps going all over list and not one time
 def linear_merge(list1, list2):
     """sort w/o sort because we want to be together but want to be difficult"""
-    list_sorted = []
-    list_combo = list1 + list2
-    while list_combo:
-        alpha_top = min(list_combo)
-        list_sorted.append(alpha_top)
-        list_combo.pop(list_combo.index(alpha_top))
-        # popping wants index
-    return list_sorted
+    # list_sorted = []
+    # list_combo = list1 + list2
+    # while list_combo:
+    #     alpha_top = min(list_combo)
+    #     list_sorted.append(alpha_top)
+    #     list_combo.pop(list_combo.index(alpha_top))
+    #     # popping wants index
+    # return list_sorted
 
-    # result = []
-    # while list1 and list2:  # just chekcing for emptiness
-    #     if list1[0] < list2[0]:
-    #         # sorted in own ways
-    #         result.append(list1.pop(0))
-    #     else:
-    #         result.append(list2.pop(0))
-    # # result.extend(list1)
-    # # # wont hurt if list1 is empty
-    # # result.extend(list2)
-    # # # wont hurt if list2 is empty
+    result = []
+    while list1 and list2:  # just chekcing for emptiness
+        if list1[0] < list2[0]:
+            # sorted in own ways
+            result.append(list1.pop(0))
+        else:
+            result.append(list2.pop(0))
+    # result.extend(list1)
+    # # wont hurt if list1 is empty
+    # result.extend(list2)
+    # # wont hurt if list2 is empty
     # result.extend(list1 if list1 else list2)
     # return result
+    return result + list1 + list2
 
 
 # Simple provided test() function used in main() to print
