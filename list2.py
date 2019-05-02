@@ -31,10 +31,11 @@ def remove_adjacent(nums):
     # # list exists with othing in it, so dont need to check length
     # return result
 
-    # result = []
-    # result = [n for n in nums if (len(result) == 0 or n != result[-1])]
-    # # list exists with othing in it, so dont need to check length
-    # return result
+    # return [nums[n] for n in range(len(nums)) if not nums or nums[n] != nums[n-1]] # might not fully work
+    # list exists with othing in it, so dont need to check length
+    # go through index and keep num if statements
+    # return [num for index, num in enumerate(nums) if index == 0 or nums[index-1] != num]
+    # enumerate gets tuple back; get index and value 
 
     # var = nums[:1]  # first element; returns list of 0 and ends b4 1, so gets first but returns in list
     # for i in nums[1:]:
